@@ -1,0 +1,3627 @@
+{
+  "roadmap": {
+    "metadata": {
+      "title": "Roadmap Computer Science - Niveau Diplômé Top Université",
+      "target_audience": "Développeur web PERN souhaitant acquérir une formation CS complète",
+      "duration_estimate": "18-36 mois (selon disponibilité)",
+      "total_lessons": 267,
+      "total_modules": 12,
+      "difficulty_progression": "Débutant → Intermédiaire → Avancé → Expert"
+    },
+    "modules": [
+      {
+        "id": "M1",
+        "title": "Mathématiques pour Computer Science",
+        "academic_mapping": "MIT 6.042J Mathematics for Computer Science / Stanford CS103",
+        "estimated_duration_weeks": 12,
+        "chapters": [
+          {
+            "id": "M1.C1",
+            "title": "Logique et Preuves",
+            "lessons": [
+              {
+                "id": "M1.C1.L1",
+                "title": "Introduction à la logique propositionnelle",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M1.C1.L2",
+                "title": "Logique des prédicats et quantificateurs",
+                "prerequisites": ["M1.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C1.L3",
+                "title": "Techniques de preuve : preuve directe et contraposée",
+                "prerequisites": ["M1.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C1.L4",
+                "title": "Preuve par contradiction et par récurrence",
+                "prerequisites": ["M1.C1.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C1.L5",
+                "title": "Induction forte et induction structurelle",
+                "prerequisites": ["M1.C1.L4"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M1.C2",
+            "title": "Théorie des ensembles et relations",
+            "lessons": [
+              {
+                "id": "M1.C2.L1",
+                "title": "Ensembles, sous-ensembles et opérations ensemblistes",
+                "prerequisites": ["M1.C1.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M1.C2.L2",
+                "title": "Relations binaires : réflexivité, symétrie, transitivité",
+                "prerequisites": ["M1.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C2.L3",
+                "title": "Relations d'équivalence et classes d'équivalence",
+                "prerequisites": ["M1.C2.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C2.L4",
+                "title": "Relations d'ordre et treillis",
+                "prerequisites": ["M1.C2.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M1.C2.L5",
+                "title": "Fonctions : injections, surjections, bijections",
+                "prerequisites": ["M1.C2.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M1.C3",
+            "title": "Combinatoire et dénombrement",
+            "lessons": [
+              {
+                "id": "M1.C3.L1",
+                "title": "Principes fondamentaux du dénombrement",
+                "prerequisites": ["M1.C2.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M1.C3.L2",
+                "title": "Permutations et arrangements",
+                "prerequisites": ["M1.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C3.L3",
+                "title": "Combinaisons et coefficients binomiaux",
+                "prerequisites": ["M1.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C3.L4",
+                "title": "Principe d'inclusion-exclusion",
+                "prerequisites": ["M1.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C3.L5",
+                "title": "Fonctions génératrices",
+                "prerequisites": ["M1.C3.L4"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M1.C4",
+            "title": "Théorie des graphes fondamentale",
+            "lessons": [
+              {
+                "id": "M1.C4.L1",
+                "title": "Graphes : définitions, représentations et terminologie",
+                "prerequisites": ["M1.C2.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C4.L2",
+                "title": "Parcours et chemins dans les graphes",
+                "prerequisites": ["M1.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C4.L3",
+                "title": "Arbres et propriétés des arbres",
+                "prerequisites": ["M1.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C4.L4",
+                "title": "Graphes eulériens et hamiltoniens",
+                "prerequisites": ["M1.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C4.L5",
+                "title": "Coloration de graphes",
+                "prerequisites": ["M1.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C4.L6",
+                "title": "Graphes planaires et théorème d'Euler",
+                "prerequisites": ["M1.C4.L5"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M1.C5",
+            "title": "Probabilités et statistiques",
+            "lessons": [
+              {
+                "id": "M1.C5.L1",
+                "title": "Espaces probabilistes et événements",
+                "prerequisites": ["M1.C2.L1", "M1.C3.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C5.L2",
+                "title": "Probabilités conditionnelles et indépendance",
+                "prerequisites": ["M1.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C5.L3",
+                "title": "Variables aléatoires discrètes",
+                "prerequisites": ["M1.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C5.L4",
+                "title": "Espérance, variance et moments",
+                "prerequisites": ["M1.C5.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C5.L5",
+                "title": "Distributions classiques (Bernoulli, binomiale, Poisson)",
+                "prerequisites": ["M1.C5.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C5.L6",
+                "title": "Loi des grands nombres et théorème central limite",
+                "prerequisites": ["M1.C5.L5"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M1.C5.L7",
+                "title": "Analyse statistique et intervalles de confiance",
+                "prerequisites": ["M1.C5.L6"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M1.C6",
+            "title": "Algèbre linéaire pour CS",
+            "lessons": [
+              {
+                "id": "M1.C6.L1",
+                "title": "Vecteurs et espaces vectoriels",
+                "prerequisites": ["M1.C2.L5"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C6.L2",
+                "title": "Matrices et opérations matricielles",
+                "prerequisites": ["M1.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C6.L3",
+                "title": "Systèmes d'équations linéaires et élimination gaussienne",
+                "prerequisites": ["M1.C6.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C6.L4",
+                "title": "Déterminants et inversibilité",
+                "prerequisites": ["M1.C6.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C6.L5",
+                "title": "Valeurs propres et vecteurs propres",
+                "prerequisites": ["M1.C6.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C6.L6",
+                "title": "Décompositions matricielles (LU, QR, SVD)",
+                "prerequisites": ["M1.C6.L5"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M1.C6.L7",
+                "title": "Applications en ML et traitement de données",
+                "prerequisites": ["M1.C6.L6"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M1.C7",
+            "title": "Analyse et complexité asymptotique",
+            "lessons": [
+              {
+                "id": "M1.C7.L1",
+                "title": "Notation O, Ω, Θ : définitions formelles",
+                "prerequisites": ["M1.C2.L5"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C7.L2",
+                "title": "Analyse de la complexité temporelle",
+                "prerequisites": ["M1.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M1.C7.L3",
+                "title": "Analyse de la complexité spatiale",
+                "prerequisites": ["M1.C7.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M1.C7.L4",
+                "title": "Relations de récurrence et méthode Master",
+                "prerequisites": ["M1.C7.L2", "M1.C1.L4"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M1.C7.L5",
+                "title": "Analyse amortie",
+                "prerequisites": ["M1.C7.L2"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M2",
+        "title": "Structures de données et Algorithmes",
+        "academic_mapping": "MIT 6.006 / Stanford CS161",
+        "estimated_duration_weeks": 16,
+        "chapters": [
+          {
+            "id": "M2.C1",
+            "title": "Structures de données fondamentales",
+            "lessons": [
+              {
+                "id": "M2.C1.L1",
+                "title": "Tableaux et strings : implémentation et opérations",
+                "prerequisites": ["M1.C7.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C1.L2",
+                "title": "Listes simplement chaînées",
+                "prerequisites": ["M2.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C1.L3",
+                "title": "Listes doublement chaînées et listes circulaires",
+                "prerequisites": ["M2.C1.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C1.L4",
+                "title": "Piles (stacks) : implémentation et applications",
+                "prerequisites": ["M2.C1.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C1.L5",
+                "title": "Files (queues) et deques",
+                "prerequisites": ["M2.C1.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C1.L6",
+                "title": "Files de priorité : introduction",
+                "prerequisites": ["M2.C1.L5"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M2.C2",
+            "title": "Tables de hachage",
+            "lessons": [
+              {
+                "id": "M2.C2.L1",
+                "title": "Fonctions de hachage et propriétés",
+                "prerequisites": ["M2.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C2.L2",
+                "title": "Gestion des collisions : chaînage",
+                "prerequisites": ["M2.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C2.L3",
+                "title": "Adressage ouvert et probing",
+                "prerequisites": ["M2.C2.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C2.L4",
+                "title": "Hachage universel et perfect hashing",
+                "prerequisites": ["M2.C2.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C2.L5",
+                "title": "Applications : caches, dictionnaires, sets",
+                "prerequisites": ["M2.C2.L4"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M2.C3",
+            "title": "Arbres binaires de recherche",
+            "lessons": [
+              {
+                "id": "M2.C3.L1",
+                "title": "BST : définition, insertion, recherche",
+                "prerequisites": ["M1.C4.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C3.L2",
+                "title": "Suppression dans les BST",
+                "prerequisites": ["M2.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C3.L3",
+                "title": "Parcours d'arbres : in-order, pre-order, post-order",
+                "prerequisites": ["M2.C3.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C3.L4",
+                "title": "Arbres AVL : rotations et équilibrage",
+                "prerequisites": ["M2.C3.L2"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M2.C3.L5",
+                "title": "Arbres Red-Black : propriétés et opérations",
+                "prerequisites": ["M2.C3.L4"],
+                "estimated_study_time_hours": 8
+              },
+              {
+                "id": "M2.C3.L6",
+                "title": "Arbres Splay et analyse amortie",
+                "prerequisites": ["M2.C3.L5", "M1.C7.L5"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M2.C4",
+            "title": "Heaps et files de priorité",
+            "lessons": [
+              {
+                "id": "M2.C4.L1",
+                "title": "Binary heaps : propriétés et implémentation",
+                "prerequisites": ["M2.C1.L6"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C4.L2",
+                "title": "Opérations heap : insert, extract-min, heapify",
+                "prerequisites": ["M2.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C4.L3",
+                "title": "Heapsort et analyse",
+                "prerequisites": ["M2.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C4.L4",
+                "title": "Binomial heaps",
+                "prerequisites": ["M2.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C4.L5",
+                "title": "Fibonacci heaps",
+                "prerequisites": ["M2.C4.L4"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M2.C5",
+            "title": "Arbres B et structures pour bases de données",
+            "lessons": [
+              {
+                "id": "M2.C5.L1",
+                "title": "Arbres B : motivation et définitions",
+                "prerequisites": ["M2.C3.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C5.L2",
+                "title": "Insertion et splitting dans les B-trees",
+                "prerequisites": ["M2.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C5.L3",
+                "title": "Suppression et merging dans les B-trees",
+                "prerequisites": ["M2.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C5.L4",
+                "title": "Arbres B+ et applications aux SGBD",
+                "prerequisites": ["M2.C5.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C5.L5",
+                "title": "Index PostgreSQL et structures internes",
+                "prerequisites": ["M2.C5.L4"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M2.C6",
+            "title": "Tries et structures pour strings",
+            "lessons": [
+              {
+                "id": "M2.C6.L1",
+                "title": "Tries standard : insertion, recherche",
+                "prerequisites": ["M2.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C6.L2",
+                "title": "Compressed tries et Patricia tries",
+                "prerequisites": ["M2.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C6.L3",
+                "title": "Suffix trees et suffix arrays",
+                "prerequisites": ["M2.C6.L2"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M2.C6.L4",
+                "title": "Applications : autocomplétion, recherche de patterns",
+                "prerequisites": ["M2.C6.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M2.C7",
+            "title": "Structures de données avancées",
+            "lessons": [
+              {
+                "id": "M2.C7.L1",
+                "title": "Union-Find (Disjoint Set Union)",
+                "prerequisites": ["M2.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C7.L2",
+                "title": "Segment trees",
+                "prerequisites": ["M2.C3.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M2.C7.L3",
+                "title": "Fenwick trees (Binary Indexed Trees)",
+                "prerequisites": ["M2.C7.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C7.L4",
+                "title": "Skip lists",
+                "prerequisites": ["M2.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C7.L5",
+                "title": "Bloom filters et probabilistic data structures",
+                "prerequisites": ["M2.C2.L1", "M1.C5.L2"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M2.C8",
+            "title": "Algorithmes de tri",
+            "lessons": [
+              {
+                "id": "M2.C8.L1",
+                "title": "Tri par comparaison : insertion sort, selection sort",
+                "prerequisites": ["M2.C1.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C8.L2",
+                "title": "Merge sort : implémentation et analyse",
+                "prerequisites": ["M2.C8.L1", "M1.C7.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C8.L3",
+                "title": "Quicksort et analyse probabiliste",
+                "prerequisites": ["M2.C8.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C8.L4",
+                "title": "Borne inférieure du tri par comparaison",
+                "prerequisites": ["M2.C8.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C8.L5",
+                "title": "Tri linéaire : counting sort, radix sort, bucket sort",
+                "prerequisites": ["M2.C8.L4"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M2.C9",
+            "title": "Algorithmes sur graphes : bases",
+            "lessons": [
+              {
+                "id": "M2.C9.L1",
+                "title": "Représentations de graphes : listes d'adjacence, matrice",
+                "prerequisites": ["M1.C4.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M2.C9.L2",
+                "title": "Breadth-First Search (BFS)",
+                "prerequisites": ["M2.C9.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C9.L3",
+                "title": "Depth-First Search (DFS) et applications",
+                "prerequisites": ["M2.C9.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C9.L4",
+                "title": "Tri topologique",
+                "prerequisites": ["M2.C9.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C9.L5",
+                "title": "Composantes fortement connexes (Kosaraju, Tarjan)",
+                "prerequisites": ["M2.C9.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C9.L6",
+                "title": "Détection de cycles",
+                "prerequisites": ["M2.C9.L3"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M2.C10",
+            "title": "Plus courts chemins",
+            "lessons": [
+              {
+                "id": "M2.C10.L1",
+                "title": "Algorithme de Dijkstra",
+                "prerequisites": ["M2.C9.L2", "M2.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C10.L2",
+                "title": "Bellman-Ford et détection de cycles négatifs",
+                "prerequisites": ["M2.C10.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C10.L3",
+                "title": "Floyd-Warshall pour tous les plus courts chemins",
+                "prerequisites": ["M2.C10.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M2.C10.L4",
+                "title": "A* et heuristiques de recherche",
+                "prerequisites": ["M2.C10.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M2.C11",
+            "title": "Arbres couvrants minimaux",
+            "lessons": [
+              {
+                "id": "M2.C11.L1",
+                "title": "Algorithme de Kruskal",
+                "prerequisites": ["M2.C7.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C11.L2",
+                "title": "Algorithme de Prim",
+                "prerequisites": ["M2.C10.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M2.C11.L3",
+                "title": "Preuves d'optimalité et propriétés MST",
+                "prerequisites": ["M2.C11.L1", "M2.C11.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M3",
+        "title": "Techniques algorithmiques avancées",
+        "academic_mapping": "MIT 6.046J / Stanford CS168",
+        "estimated_duration_weeks": 12,
+        "chapters": [
+          {
+            "id": "M3.C1",
+            "title": "Diviser pour régner",
+            "lessons": [
+              {
+                "id": "M3.C1.L1",
+                "title": "Paradigme diviser pour régner : principes",
+                "prerequisites": ["M2.C8.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C1.L2",
+                "title": "Multiplication de matrices : algorithme de Strassen",
+                "prerequisites": ["M3.C1.L1", "M1.C6.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C1.L3",
+                "title": "Multiplication d'entiers rapide (Karatsuba)",
+                "prerequisites": ["M3.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C1.L4",
+                "title": "Problème de sélection et médiane en temps linéaire",
+                "prerequisites": ["M3.C1.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M3.C2",
+            "title": "Programmation dynamique",
+            "lessons": [
+              {
+                "id": "M3.C2.L1",
+                "title": "Introduction à la programmation dynamique",
+                "prerequisites": ["M1.C1.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C2.L2",
+                "title": "Suite de Fibonacci optimisée et mémoïsation",
+                "prerequisites": ["M3.C2.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M3.C2.L3",
+                "title": "Problème du sac à dos (0/1 et unbounded)",
+                "prerequisites": ["M3.C2.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C2.L4",
+                "title": "Plus longue sous-séquence commune (LCS)",
+                "prerequisites": ["M3.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C2.L5",
+                "title": "Distance d'édition (Levenshtein)",
+                "prerequisites": ["M3.C2.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C2.L6",
+                "title": "Problèmes de chemins dans les DAGs",
+                "prerequisites": ["M3.C2.L1", "M2.C9.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C2.L7",
+                "title": "Multiplication en chaîne de matrices",
+                "prerequisites": ["M3.C2.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C2.L8",
+                "title": "DP sur arbres et intervalles",
+                "prerequisites": ["M3.C2.L7"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M3.C3",
+            "title": "Algorithmes greedy",
+            "lessons": [
+              {
+                "id": "M3.C3.L1",
+                "title": "Paradigme greedy : principe et stratégie",
+                "prerequisites": ["M2.C11.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C3.L2",
+                "title": "Problème de l'ordonnancement des tâches",
+                "prerequisites": ["M3.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C3.L3",
+                "title": "Huffman coding et compression optimale",
+                "prerequisites": ["M3.C3.L1", "M2.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C3.L4",
+                "title": "Preuves de correction pour algorithmes greedy",
+                "prerequisites": ["M3.C3.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M3.C4",
+            "title": "Algorithmes de flot et matching",
+            "lessons": [
+              {
+                "id": "M3.C4.L1",
+                "title": "Flot maximum : définitions et théorème max-flow min-cut",
+                "prerequisites": ["M2.C9.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C4.L2",
+                "title": "Algorithme de Ford-Fulkerson",
+                "prerequisites": ["M3.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C4.L3",
+                "title": "Algorithme d'Edmonds-Karp",
+                "prerequisites": ["M3.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C4.L4",
+                "title": "Push-relabel algorithms",
+                "prerequisites": ["M3.C4.L3"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M3.C4.L5",
+                "title": "Matching dans les graphes bipartis",
+                "prerequisites": ["M3.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C4.L6",
+                "title": "Applications du flot : problèmes de découpe, affectation",
+                "prerequisites": ["M3.C4.L5"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M3.C5",
+            "title": "Recherche et backtracking",
+            "lessons": [
+              {
+                "id": "M3.C5.L1",
+                "title": "Backtracking : principe et pruning",
+                "prerequisites": ["M2.C9.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C5.L2",
+                "title": "Branch and bound",
+                "prerequisites": ["M3.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C5.L3",
+                "title": "Problèmes combinatoires : N-Queens, Sudoku",
+                "prerequisites": ["M3.C5.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M3.C6",
+            "title": "Algorithmes de string matching",
+            "lessons": [
+              {
+                "id": "M3.C6.L1",
+                "title": "Algorithme naïf et Rabin-Karp",
+                "prerequisites": ["M2.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M3.C6.L2",
+                "title": "Knuth-Morris-Pratt (KMP)",
+                "prerequisites": ["M3.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C6.L3",
+                "title": "Boyer-Moore et heuristiques",
+                "prerequisites": ["M3.C6.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M3.C6.L4",
+                "title": "Expressions régulières et automates",
+                "prerequisites": ["M3.C6.L3"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M4",
+        "title": "Théorie de la complexité et calculabilité",
+        "academic_mapping": "MIT 18.404J / Stanford CS154",
+        "estimated_duration_weeks": 10,
+        "chapters": [
+          {
+            "id": "M4.C1",
+            "title": "Automates et langages réguliers",
+            "lessons": [
+              {
+                "id": "M4.C1.L1",
+                "title": "Automates finis déterministes (DFA)",
+                "prerequisites": ["M1.C2.L5"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C1.L2",
+                "title": "Automates finis non-déterministes (NFA)",
+                "prerequisites": ["M4.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C1.L3",
+                "title": "Équivalence DFA-NFA et construction de sous-ensembles",
+                "prerequisites": ["M4.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C1.L4",
+                "title": "Expressions régulières et théorème de Kleene",
+                "prerequisites": ["M4.C1.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C1.L5",
+                "title": "Lemme de pompage pour langages réguliers",
+                "prerequisites": ["M4.C1.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C1.L6",
+                "title": "Minimisation d'automates",
+                "prerequisites": ["M4.C1.L3"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M4.C2",
+            "title": "Grammaires et langages context-free",
+            "lessons": [
+              {
+                "id": "M4.C2.L1",
+                "title": "Grammaires context-free (CFG)",
+                "prerequisites": ["M4.C1.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C2.L2",
+                "title": "Automates à pile (PDA)",
+                "prerequisites": ["M4.C2.L1", "M4.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C2.L3",
+                "title": "Équivalence CFG-PDA",
+                "prerequisites": ["M4.C2.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C2.L4",
+                "title": "Lemme de pompage pour langages context-free",
+                "prerequisites": ["M4.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C2.L5",
+                "title": "Formes normales : Chomsky et Greibach",
+                "prerequisites": ["M4.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C2.L6",
+                "title": "Algorithmes de parsing : CYK",
+                "prerequisites": ["M4.C2.L5"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M4.C3",
+            "title": "Machines de Turing et calculabilité",
+            "lessons": [
+              {
+                "id": "M4.C3.L1",
+                "title": "Machines de Turing : définition et fonctionnement",
+                "prerequisites": ["M4.C2.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C3.L2",
+                "title": "Variantes de machines de Turing",
+                "prerequisites": ["M4.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C3.L3",
+                "title": "Thèse de Church-Turing",
+                "prerequisites": ["M4.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M4.C3.L4",
+                "title": "Problème de l'arrêt et indécidabilité",
+                "prerequisites": ["M4.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C3.L5",
+                "title": "Réductions et problèmes indécidables",
+                "prerequisites": ["M4.C3.L4"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M4.C4",
+            "title": "Classes de complexité",
+            "lessons": [
+              {
+                "id": "M4.C4.L1",
+                "title": "Classes P et NP : définitions",
+                "prerequisites": ["M4.C3.L1", "M1.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C4.L2",
+                "title": "NP-complétude et théorème de Cook-Levin",
+                "prerequisites": ["M4.C4.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M4.C4.L3",
+                "title": "Réductions polynomiales",
+                "prerequisites": ["M4.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C4.L4",
+                "title": "Problèmes NP-complets classiques (SAT, 3-SAT, Clique, etc.)",
+                "prerequisites": ["M4.C4.L3"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M4.C4.L5",
+                "title": "Classes coNP, PSPACE, EXPTIME",
+                "prerequisites": ["M4.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M4.C4.L6",
+                "title": "Approximation algorithms pour problèmes NP-hard",
+                "prerequisites": ["M4.C4.L4"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M5",
+        "title": "Architecture des ordinateurs et systèmes bas niveau",
+        "academic_mapping": "MIT 6.004 / Stanford CS107",
+        "estimated_duration_weeks": 10,
+        "chapters": [
+          {
+            "id": "M5.C1",
+            "title": "Représentation des données",
+            "lessons": [
+              {
+                "id": "M5.C1.L1",
+                "title": "Systèmes de numération et représentation binaire",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M5.C1.L2",
+                "title": "Entiers signés : complément à deux",
+                "prerequisites": ["M5.C1.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M5.C1.L3",
+                "title": "Nombres à virgule flottante (IEEE 754)",
+                "prerequisites": ["M5.C1.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C1.L4",
+                "title": "Encodage de caractères : ASCII, Unicode, UTF-8",
+                "prerequisites": ["M5.C1.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M5.C2",
+            "title": "Logique digitale et circuits",
+            "lessons": [
+              {
+                "id": "M5.C2.L1",
+                "title": "Portes logiques et algèbre booléenne",
+                "prerequisites": ["M1.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C2.L2",
+                "title": "Circuits combinatoires : additionneur, multiplexeur",
+                "prerequisites": ["M5.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C2.L3",
+                "title": "Circuits séquentiels : flip-flops, registres",
+                "prerequisites": ["M5.C2.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C2.L4",
+                "title": "Machines à états finis en hardware",
+                "prerequisites": ["M5.C2.L3", "M4.C1.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M5.C3",
+            "title": "Architecture CPU",
+            "lessons": [
+              {
+                "id": "M5.C3.L1",
+                "title": "Architecture Von Neumann vs Harvard",
+                "prerequisites": ["M5.C2.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M5.C3.L2",
+                "title": "ISA (Instruction Set Architecture) : RISC vs CISC",
+                "prerequisites": ["M5.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C3.L3",
+                "title": "Cycle d'exécution : fetch, decode, execute",
+                "prerequisites": ["M5.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C3.L4",
+                "title": "Pipeline d'instructions",
+                "prerequisites": ["M5.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C3.L5",
+                "title": "Hazards et résolution dans le pipeline",
+                "prerequisites": ["M5.C3.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C3.L6",
+                "title": "Branch prediction",
+                "prerequisites": ["M5.C3.L5"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C3.L7",
+                "title": "Out-of-order execution et superscalar",
+                "prerequisites": ["M5.C3.L6"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M5.C4",
+            "title": "Hiérarchie mémoire",
+            "lessons": [
+              {
+                "id": "M5.C4.L1",
+                "title": "Hiérarchie mémoire : registres, cache, RAM, stockage",
+                "prerequisites": ["M5.C3.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C4.L2",
+                "title": "Cache : principes de localité",
+                "prerequisites": ["M5.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C4.L3",
+                "title": "Organisation du cache : direct-mapped, associatif",
+                "prerequisites": ["M5.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C4.L4",
+                "title": "Politiques de remplacement : LRU, FIFO",
+                "prerequisites": ["M5.C4.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C4.L5",
+                "title": "Cohérence de cache dans les systèmes multi-cœurs",
+                "prerequisites": ["M5.C4.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C4.L6",
+                "title": "Mémoire virtuelle : segmentation et pagination",
+                "prerequisites": ["M5.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C4.L7",
+                "title": "TLB (Translation Lookaside Buffer)",
+                "prerequisites": ["M5.C4.L6"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M5.C5",
+            "title": "Assembly et programmation bas niveau",
+            "lessons": [
+              {
+                "id": "M5.C5.L1",
+                "title": "Introduction à l'assembly (x86-64)",
+                "prerequisites": ["M5.C3.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C5.L2",
+                "title": "Registres et instructions de base",
+                "prerequisites": ["M5.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C5.L3",
+                "title": "Stack frame et calling conventions",
+                "prerequisites": ["M5.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M5.C5.L4",
+                "title": "Liaison entre C et assembly",
+                "prerequisites": ["M5.C5.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M5.C6",
+            "title": "I/O et périphériques",
+            "lessons": [
+              {
+                "id": "M5.C6.L1",
+                "title": "Systèmes d'entrée/sortie : polling vs interruptions",
+                "prerequisites": ["M5.C3.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C6.L2",
+                "title": "DMA (Direct Memory Access)",
+                "prerequisites": ["M5.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M5.C6.L3",
+                "title": "Systèmes de fichiers : organisation physique",
+                "prerequisites": ["M5.C6.L2"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M6",
+        "title": "Systèmes d'exploitation",
+        "academic_mapping": "MIT 6.828 / Stanford CS140",
+        "estimated_duration_weeks": 12,
+        "chapters": [
+          {
+            "id": "M6.C1",
+            "title": "Introduction aux OS",
+            "lessons": [
+              {
+                "id": "M6.C1.L1",
+                "title": "Rôle et architecture d'un OS",
+                "prerequisites": ["M5.C3.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C1.L2",
+                "title": "Kernel space vs User space",
+                "prerequisites": ["M6.C1.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C1.L3",
+                "title": "System calls et interface OS",
+                "prerequisites": ["M6.C1.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C1.L4",
+                "title": "Modes d'exécution et protection rings",
+                "prerequisites": ["M6.C1.L2"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M6.C2",
+            "title": "Processus et threads",
+            "lessons": [
+              {
+                "id": "M6.C2.L1",
+                "title": "Notion de processus : PCB, états",
+                "prerequisites": ["M6.C1.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C2.L2",
+                "title": "Création de processus : fork, exec",
+                "prerequisites": ["M6.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C2.L3",
+                "title": "Threads : modèle et implémentation",
+                "prerequisites": ["M6.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C2.L4",
+                "title": "User-level vs Kernel-level threads",
+                "prerequisites": ["M6.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C2.L5",
+                "title": "Context switching",
+                "prerequisites": ["M6.C2.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M6.C3",
+            "title": "Ordonnancement CPU",
+            "lessons": [
+              {
+                "id": "M6.C3.L1",
+                "title": "Critères d'ordonnancement",
+                "prerequisites": ["M6.C2.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C3.L2",
+                "title": "Algorithmes d'ordonnancement : FCFS, SJF, Priority",
+                "prerequisites": ["M6.C3.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C3.L3",
+                "title": "Round Robin et ordonnancement préemptif",
+                "prerequisites": ["M6.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C3.L4",
+                "title": "Ordonnancement multi-niveaux",
+                "prerequisites": ["M6.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C3.L5",
+                "title": "Ordonnancement temps réel",
+                "prerequisites": ["M6.C3.L4"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M6.C4",
+            "title": "Synchronisation et concurrence",
+            "lessons": [
+              {
+                "id": "M6.C4.L1",
+                "title": "Race conditions et sections critiques",
+                "prerequisites": ["M6.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C4.L2",
+                "title": "Mutex et locks",
+                "prerequisites": ["M6.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C4.L3",
+                "title": "Sémaphores",
+                "prerequisites": ["M6.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C4.L4",
+                "title": "Monitors et variables de condition",
+                "prerequisites": ["M6.C4.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C4.L5",
+                "title": "Problèmes classiques : producteur-consommateur, lecteurs-écrivains",
+                "prerequisites": ["M6.C4.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C4.L6",
+                "title": "Deadlocks : détection et prévention",
+                "prerequisites": ["M6.C4.L3"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M6.C5",
+            "title": "Gestion de la mémoire",
+            "lessons": [
+              {
+                "id": "M6.C5.L1",
+                "title": "Allocation de mémoire : contiguë et non-contiguë",
+                "prerequisites": ["M5.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C5.L2",
+                "title": "Pagination : mécanisme et tables de pages",
+                "prerequisites": ["M6.C5.L1", "M5.C4.L6"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C5.L3",
+                "title": "Segmentation et mémoire virtuelle",
+                "prerequisites": ["M6.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C5.L4",
+                "title": "Algorithmes de remplacement de pages",
+                "prerequisites": ["M6.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C5.L5",
+                "title": "Thrashing et working set",
+                "prerequisites": ["M6.C5.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C5.L6",
+                "title": "Allocation dynamique : malloc, free",
+                "prerequisites": ["M6.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C5.L7",
+                "title": "Garbage collection : mark-and-sweep, copying, generational",
+                "prerequisites": ["M6.C5.L6"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M6.C6",
+            "title": "Systèmes de fichiers",
+            "lessons": [
+              {
+                "id": "M6.C6.L1",
+                "title": "Interface et opérations fichiers",
+                "prerequisites": ["M6.C1.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C6.L2",
+                "title": "Structures de répertoires",
+                "prerequisites": ["M6.C6.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C6.L3",
+                "title": "Allocation de fichiers : contiguë, chaînée, indexée",
+                "prerequisites": ["M6.C6.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C6.L4",
+                "title": "Free space management",
+                "prerequisites": ["M6.C6.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C6.L5",
+                "title": "Systèmes de fichiers : ext4, journaling",
+                "prerequisites": ["M6.C6.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M6.C6.L6",
+                "title": "RAID et redondance",
+                "prerequisites": ["M6.C6.L5"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M6.C7",
+            "title": "Performance et monitoring",
+            "lessons": [
+              {
+                "id": "M6.C7.L1",
+                "title": "Profilage système : CPU, mémoire, I/O",
+                "prerequisites": ["M6.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M6.C7.L2",
+                "title": "Outils de monitoring : top, htop, iostat",
+                "prerequisites": ["M6.C7.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M6.C7.L3",
+                "title": "Performance tuning dans Node.js",
+                "prerequisites": ["M6.C7.L2", "M6.C5.L7"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M7",
+        "title": "Réseaux et systèmes distribués",
+        "academic_mapping": "MIT 6.829 / Stanford CS144",
+        "estimated_duration_weeks": 14,
+        "chapters": [
+          {
+            "id": "M7.C1",
+            "title": "Fondamentaux des réseaux",
+            "lessons": [
+              {
+                "id": "M7.C1.L1",
+                "title": "Modèle OSI et TCP/IP",
+                "prerequisites": [],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C1.L2",
+                "title": "Couche physique et liaison de données",
+                "prerequisites": ["M7.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C1.L3",
+                "title": "Protocoles Ethernet et MAC addressing",
+                "prerequisites": ["M7.C1.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C1.L4",
+                "title": "Switching et VLANs",
+                "prerequisites": ["M7.C1.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M7.C2",
+            "title": "Couche réseau",
+            "lessons": [
+              {
+                "id": "M7.C2.L1",
+                "title": "Protocole IP : IPv4 et IPv6",
+                "prerequisites": ["M7.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C2.L2",
+                "title": "Adressage IP et subnetting",
+                "prerequisites": ["M7.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C2.L3",
+                "title": "Routage : algorithmes et protocoles (RIP, OSPF, BGP)",
+                "prerequisites": ["M7.C2.L2", "M2.C10.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M7.C2.L4",
+                "title": "NAT et firewalls",
+                "prerequisites": ["M7.C2.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C2.L5",
+                "title": "ICMP et diagnostic réseau",
+                "prerequisites": ["M7.C2.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M7.C3",
+            "title": "Couche transport",
+            "lessons": [
+              {
+                "id": "M7.C3.L1",
+                "title": "UDP : protocole sans connexion",
+                "prerequisites": ["M7.C2.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M7.C3.L2",
+                "title": "TCP : établissement de connexion (3-way handshake)",
+                "prerequisites": ["M7.C3.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C3.L3",
+                "title": "TCP : contrôle de flux et fenêtre glissante",
+                "prerequisites": ["M7.C3.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C3.L4",
+                "title": "TCP : contrôle de congestion (slow start, AIMD)",
+                "prerequisites": ["M7.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C3.L5",
+                "title": "TCP : fiabilité et retransmission",
+                "prerequisites": ["M7.C3.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M7.C4",
+            "title": "Couche application",
+            "lessons": [
+              {
+                "id": "M7.C4.L1",
+                "title": "DNS : résolution de noms",
+                "prerequisites": ["M7.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C4.L2",
+                "title": "HTTP/1.1 : méthodes, headers, codes de statut",
+                "prerequisites": ["M7.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C4.L3",
+                "title": "HTTP/2 : multiplexing et server push",
+                "prerequisites": ["M7.C4.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C4.L4",
+                "title": "HTTP/3 et QUIC",
+                "prerequisites": ["M7.C4.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C4.L5",
+                "title": "WebSocket et communication bidirectionnelle",
+                "prerequisites": ["M7.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C4.L6",
+                "title": "REST API : principes et design",
+                "prerequisites": ["M7.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C4.L7",
+                "title": "GraphQL vs REST",
+                "prerequisites": ["M7.C4.L6"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C4.L8",
+                "title": "gRPC et Protocol Buffers",
+                "prerequisites": ["M7.C4.L6"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M7.C5",
+            "title": "Sécurité réseau",
+            "lessons": [
+              {
+                "id": "M7.C5.L1",
+                "title": "Cryptographie symétrique et asymétrique (rappels)",
+                "prerequisites": ["M1.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C5.L2",
+                "title": "TLS/SSL : handshake et certificats",
+                "prerequisites": ["M7.C5.L1", "M7.C4.L2"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M7.C5.L3",
+                "title": "PKI et chaîne de confiance",
+                "prerequisites": ["M7.C5.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C5.L4",
+                "title": "VPN et tunneling",
+                "prerequisites": ["M7.C5.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M7.C6",
+            "title": "Systèmes distribués : fondamentaux",
+            "lessons": [
+              {
+                "id": "M7.C6.L1",
+                "title": "Caractéristiques des systèmes distribués",
+                "prerequisites": ["M7.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C6.L2",
+                "title": "Horloges logiques : Lamport timestamps",
+                "prerequisites": ["M7.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C6.L3",
+                "title": "Horloges vectorielles",
+                "prerequisites": ["M7.C6.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C6.L4",
+                "title": "Synchronisation d'horloges : NTP",
+                "prerequisites": ["M7.C6.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C6.L5",
+                "title": "Exclusion mutuelle distribuée",
+                "prerequisites": ["M7.C6.L2"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M7.C7",
+            "title": "Cohérence et consensus",
+            "lessons": [
+              {
+                "id": "M7.C7.L1",
+                "title": "Modèles de cohérence : strong, eventual, causal",
+                "prerequisites": ["M7.C6.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C7.L2",
+                "title": "Théorème CAP",
+                "prerequisites": ["M7.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C7.L3",
+                "title": "Two-phase commit (2PC)",
+                "prerequisites": ["M7.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C7.L4",
+                "title": "Algorithme de Paxos",
+                "prerequisites": ["M7.C7.L3"],
+                "estimated_study_time_hours": 8
+              },
+              {
+                "id": "M7.C7.L5",
+                "title": "Algorithme de Raft",
+                "prerequisites": ["M7.C7.L4"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M7.C7.L6",
+                "title": "Byzantine fault tolerance",
+                "prerequisites": ["M7.C7.L5"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M7.C8",
+            "title": "Architecture distribuée pour le web",
+            "lessons": [
+              {
+                "id": "M7.C8.L1",
+                "title": "Load balancing : algorithmes et stratégies",
+                "prerequisites": ["M7.C3.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C8.L2",
+                "title": "Reverse proxy : Nginx, HAProxy",
+                "prerequisites": ["M7.C8.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C8.L3",
+                "title": "CDN et caching distribué",
+                "prerequisites": ["M7.C8.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C8.L4",
+                "title": "Service discovery et registre de services",
+                "prerequisites": ["M7.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C8.L5",
+                "title": "Architecture microservices",
+                "prerequisites": ["M7.C8.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C8.L6",
+                "title": "Message queues : RabbitMQ, Kafka",
+                "prerequisites": ["M7.C8.L5"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C8.L7",
+                "title": "Event-driven architecture",
+                "prerequisites": ["M7.C8.L6"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M7.C9",
+            "title": "Réplication et partitionnement",
+            "lessons": [
+              {
+                "id": "M7.C9.L1",
+                "title": "Réplication master-slave",
+                "prerequisites": ["M7.C7.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M7.C9.L2",
+                "title": "Réplication multi-master",
+                "prerequisites": ["M7.C9.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C9.L3",
+                "title": "Sharding et partitionnement horizontal",
+                "prerequisites": ["M7.C7.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C9.L4",
+                "title": "Consistent hashing",
+                "prerequisites": ["M7.C9.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M7.C9.L5",
+                "title": "Partition tolerance et split-brain",
+                "prerequisites": ["M7.C9.L3", "M7.C7.L2"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M8",
+        "title": "Bases de données",
+        "academic_mapping": "MIT 6.814 / Stanford CS145 & CS245",
+        "estimated_duration_weeks": 12,
+        "chapters": [
+          {
+            "id": "M8.C1",
+            "title": "Théorie relationnelle",
+            "lessons": [
+              {
+                "id": "M8.C1.L1",
+                "title": "Modèle relationnel : concepts et algèbre",
+                "prerequisites": ["M1.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C1.L2",
+                "title": "Dépendances fonctionnelles",
+                "prerequisites": ["M8.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C1.L3",
+                "title": "Normalisation : 1NF, 2NF, 3NF",
+                "prerequisites": ["M8.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C1.L4",
+                "title": "Formes normales : BCNF, 4NF, 5NF",
+                "prerequisites": ["M8.C1.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C1.L5",
+                "title": "Décomposition et préservation de dépendances",
+                "prerequisites": ["M8.C1.L4"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M8.C2",
+            "title": "SQL avancé",
+            "lessons": [
+              {
+                "id": "M8.C2.L1",
+                "title": "Requêtes complexes : jointures, sous-requêtes",
+                "prerequisites": ["M8.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C2.L2",
+                "title": "Agrégations et GROUP BY",
+                "prerequisites": ["M8.C2.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M8.C2.L3",
+                "title": "Window functions",
+                "prerequisites": ["M8.C2.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C2.L4",
+                "title": "CTE (Common Table Expressions) et requêtes récursives",
+                "prerequisites": ["M8.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C2.L5",
+                "title": "Triggers et stored procedures",
+                "prerequisites": ["M8.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C2.L6",
+                "title": "Vues matérialisées",
+                "prerequisites": ["M8.C2.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M8.C3",
+            "title": "Transactions et concurrence",
+            "lessons": [
+              {
+                "id": "M8.C3.L1",
+                "title": "Propriétés ACID",
+                "prerequisites": ["M8.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C3.L2",
+                "title": "Niveaux d'isolation : Read Uncommitted, Read Committed",
+                "prerequisites": ["M8.C3.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C3.L3",
+                "title": "Niveaux d'isolation : Repeatable Read, Serializable",
+                "prerequisites": ["M8.C3.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C3.L4",
+                "title": "Anomalies : dirty read, non-repeatable read, phantom read",
+                "prerequisites": ["M8.C3.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C3.L5",
+                "title": "Contrôle de concurrence : 2PL (Two-Phase Locking)",
+                "prerequisites": ["M8.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C3.L6",
+                "title": "MVCC (Multi-Version Concurrency Control)",
+                "prerequisites": ["M8.C3.L5"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M8.C3.L7",
+                "title": "Deadlock detection et résolution",
+                "prerequisites": ["M8.C3.L5"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M8.C4",
+            "title": "Index et optimisation",
+            "lessons": [
+              {
+                "id": "M8.C4.L1",
+                "title": "Types d'index : B-tree, Hash, GiST, GIN",
+                "prerequisites": ["M2.C5.L4"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C4.L2",
+                "title": "Index composites et covering index",
+                "prerequisites": ["M8.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C4.L3",
+                "title": "Analyse des plans d'exécution (EXPLAIN)",
+                "prerequisites": ["M8.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C4.L4",
+                "title": "Optimisation de requêtes : heuristiques",
+                "prerequisites": ["M8.C4.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C4.L5",
+                "title": "Statistiques de tables et VACUUM",
+                "prerequisites": ["M8.C4.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C4.L6",
+                "title": "Partitionnement de tables",
+                "prerequisites": ["M8.C4.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M8.C5",
+            "title": "Stockage et recovery",
+            "lessons": [
+              {
+                "id": "M8.C5.L1",
+                "title": "Organisation du stockage : pages, tuples",
+                "prerequisites": ["M5.C6.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C5.L2",
+                "title": "Buffer pool et gestion de mémoire",
+                "prerequisites": ["M8.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C5.L3",
+                "title": "Write-Ahead Logging (WAL)",
+                "prerequisites": ["M8.C3.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C5.L4",
+                "title": "Checkpointing",
+                "prerequisites": ["M8.C5.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C5.L5",
+                "title": "Crash recovery : ARIES",
+                "prerequisites": ["M8.C5.L4"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M8.C6",
+            "title": "PostgreSQL avancé",
+            "lessons": [
+              {
+                "id": "M8.C6.L1",
+                "title": "Architecture interne de PostgreSQL",
+                "prerequisites": ["M8.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C6.L2",
+                "title": "Configuration et tuning PostgreSQL",
+                "prerequisites": ["M8.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C6.L3",
+                "title": "Extensions PostgreSQL : PostGIS, pg_stat_statements",
+                "prerequisites": ["M8.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C6.L4",
+                "title": "Réplication PostgreSQL : streaming, logical",
+                "prerequisites": ["M8.C6.L1", "M7.C9.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C6.L5",
+                "title": "Connection pooling : PgBouncer",
+                "prerequisites": ["M8.C6.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M8.C7",
+            "title": "NoSQL et bases alternatives",
+            "lessons": [
+              {
+                "id": "M8.C7.L1",
+                "title": "Types de bases NoSQL : key-value, document, column, graph",
+                "prerequisites": ["M7.C7.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C7.L2",
+                "title": "Document databases : MongoDB",
+                "prerequisites": ["M8.C7.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C7.L3",
+                "title": "Key-value stores : Redis",
+                "prerequisites": ["M8.C7.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C7.L4",
+                "title": "Graph databases : Neo4j",
+                "prerequisites": ["M8.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M8.C7.L5",
+                "title": "Time-series databases : InfluxDB, TimescaleDB",
+                "prerequisites": ["M8.C7.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M8.C7.L6",
+                "title": "Quand choisir SQL vs NoSQL",
+                "prerequisites": ["M8.C7.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M9",
+        "title": "Sécurité et cryptographie",
+        "academic_mapping": "MIT 6.857 / Stanford CS255",
+        "estimated_duration_weeks": 10,
+        "chapters": [
+          {
+            "id": "M9.C1",
+            "title": "Principes de sécurité",
+            "lessons": [
+              {
+                "id": "M9.C1.L1",
+                "title": "CIA triad : Confidentialité, Intégrité, Disponibilité",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C1.L2",
+                "title": "Threat modeling et analyse de risque",
+                "prerequisites": ["M9.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C1.L3",
+                "title": "Principe du moindre privilège",
+                "prerequisites": ["M9.C1.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C1.L4",
+                "title": "Defense in depth",
+                "prerequisites": ["M9.C1.L3"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M9.C2",
+            "title": "Cryptographie fondamentale",
+            "lessons": [
+              {
+                "id": "M9.C2.L1",
+                "title": "Fonctions de hachage cryptographiques",
+                "prerequisites": ["M2.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C2.L2",
+                "title": "Chiffrement symétrique : AES, modes d'opération",
+                "prerequisites": ["M9.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M9.C2.L3",
+                "title": "Chiffrement asymétrique : RSA, courbes elliptiques",
+                "prerequisites": ["M9.C2.L2"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M9.C2.L4",
+                "title": "Signatures numériques",
+                "prerequisites": ["M9.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C2.L5",
+                "title": "MAC (Message Authentication Code) et HMAC",
+                "prerequisites": ["M9.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C2.L6",
+                "title": "Échange de clés : Diffie-Hellman",
+                "prerequisites": ["M9.C2.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M9.C2.L7",
+                "title": "Gestion de clés et rotation",
+                "prerequisites": ["M9.C2.L6"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M9.C3",
+            "title": "Authentification et autorisation",
+            "lessons": [
+              {
+                "id": "M9.C3.L1",
+                "title": "Hashing de mots de passe : bcrypt, scrypt, Argon2",
+                "prerequisites": ["M9.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C3.L2",
+                "title": "Sessions et cookies sécurisés",
+                "prerequisites": ["M7.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C3.L3",
+                "title": "JWT (JSON Web Tokens)",
+                "prerequisites": ["M9.C3.L2", "M9.C2.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C3.L4",
+                "title": "OAuth 2.0 et OpenID Connect",
+                "prerequisites": ["M9.C3.L3"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M9.C3.L5",
+                "title": "Authentification multi-facteur (MFA)",
+                "prerequisites": ["M9.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C3.L6",
+                "title": "RBAC et ABAC",
+                "prerequisites": ["M9.C3.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M9.C4",
+            "title": "Vulnérabilités web",
+            "lessons": [
+              {
+                "id": "M9.C4.L1",
+                "title": "OWASP Top 10 : overview",
+                "prerequisites": ["M7.C4.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C4.L2",
+                "title": "Injection SQL et prévention",
+                "prerequisites": ["M9.C4.L1", "M8.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M9.C4.L3",
+                "title": "XSS (Cross-Site Scripting) : stored, reflected, DOM-based",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M9.C4.L4",
+                "title": "CSRF (Cross-Site Request Forgery)",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C4.L5",
+                "title": "Clickjacking et frame busting",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C4.L6",
+                "title": "SSRF (Server-Side Request Forgery)",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C4.L7",
+                "title": "Insecure deserialization",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C4.L8",
+                "title": "Path traversal et file inclusion",
+                "prerequisites": ["M9.C4.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M9.C5",
+            "title": "Secure coding practices",
+            "lessons": [
+              {
+                "id": "M9.C5.L1",
+                "title": "Input validation et sanitization",
+                "prerequisites": ["M9.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C5.L2",
+                "title": "Output encoding",
+                "prerequisites": ["M9.C4.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C5.L3",
+                "title": "Parameterized queries et ORMs",
+                "prerequisites": ["M9.C4.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C5.L4",
+                "title": "Content Security Policy (CSP)",
+                "prerequisites": ["M9.C4.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C5.L5",
+                "title": "Security headers : HSTS, X-Frame-Options, etc.",
+                "prerequisites": ["M9.C5.L4"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C5.L6",
+                "title": "Rate limiting et protection DDoS",
+                "prerequisites": ["M7.C8.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C5.L7",
+                "title": "Secrets management : variables d'environnement, vaults",
+                "prerequisites": ["M9.C2.L7"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M9.C6",
+            "title": "Sécurité en Node.js",
+            "lessons": [
+              {
+                "id": "M9.C6.L1",
+                "title": "Dépendances et vulnérabilités : npm audit",
+                "prerequisites": ["M9.C1.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C6.L2",
+                "title": "Helmet.js et sécurisation Express",
+                "prerequisites": ["M9.C5.L5"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M9.C6.L3",
+                "title": "Prévention des regex DoS (ReDoS)",
+                "prerequisites": ["M9.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M9.C6.L4",
+                "title": "Validation avec Joi/Zod",
+                "prerequisites": ["M9.C5.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M10",
+        "title": "Ingénierie logicielle et pratiques DevOps",
+        "academic_mapping": "MIT 6.031 / Stanford CS251",
+        "estimated_duration_weeks": 10,
+        "chapters": [
+          {
+            "id": "M10.C1",
+            "title": "Design patterns",
+            "lessons": [
+              {
+                "id": "M10.C1.L1",
+                "title": "Principes SOLID",
+                "prerequisites": [],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C1.L2",
+                "title": "Creational patterns : Singleton, Factory, Builder",
+                "prerequisites": ["M10.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C1.L3",
+                "title": "Structural patterns : Adapter, Decorator, Proxy",
+                "prerequisites": ["M10.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C1.L4",
+                "title": "Behavioral patterns : Observer, Strategy, Command",
+                "prerequisites": ["M10.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C1.L5",
+                "title": "Patterns dans Node.js : middleware, event emitters",
+                "prerequisites": ["M10.C1.L4"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C2",
+            "title": "Testing",
+            "lessons": [
+              {
+                "id": "M10.C2.L1",
+                "title": "Types de tests : unit, integration, e2e",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C2.L2",
+                "title": "Test-Driven Development (TDD)",
+                "prerequisites": ["M10.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C2.L3",
+                "title": "Unit testing avec Jest",
+                "prerequisites": ["M10.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C2.L4",
+                "title": "Mocking et stubbing",
+                "prerequisites": ["M10.C2.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C2.L5",
+                "title": "Integration testing : Supertest",
+                "prerequisites": ["M10.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C2.L6",
+                "title": "E2E testing : Playwright, Cypress",
+                "prerequisites": ["M10.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C2.L7",
+                "title": "Code coverage et métriques",
+                "prerequisites": ["M10.C2.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C2.L8",
+                "title": "Testing de bases de données",
+                "prerequisites": ["M10.C2.L5"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C3",
+            "title": "Code quality et review",
+            "lessons": [
+              {
+                "id": "M10.C3.L1",
+                "title": "Linting : ESLint, Prettier",
+                "prerequisites": [],
+                "estimated_study_time_hours": 3
+              },
+              {
+                "id": "M10.C3.L2",
+                "title": "Static analysis : SonarQube",
+                "prerequisites": ["M10.C3.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C3.L3",
+                "title": "Code review best practices",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C3.L4",
+                "title": "Refactoring techniques",
+                "prerequisites": ["M10.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C3.L5",
+                "title": "Technical debt management",
+                "prerequisites": ["M10.C3.L4"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M10.C4",
+            "title": "Version control avancé",
+            "lessons": [
+              {
+                "id": "M10.C4.L1",
+                "title": "Git workflows : Git Flow, GitHub Flow",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C4.L2",
+                "title": "Branching strategies",
+                "prerequisites": ["M10.C4.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C4.L3",
+                "title": "Rebasing vs merging",
+                "prerequisites": ["M10.C4.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C4.L4",
+                "title": "Résolution de conflits avancée",
+                "prerequisites": ["M10.C4.L3"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C4.L5",
+                "title": "Git hooks et automation",
+                "prerequisites": ["M10.C4.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M10.C5",
+            "title": "CI/CD",
+            "lessons": [
+              {
+                "id": "M10.C5.L1",
+                "title": "Principes de Continuous Integration",
+                "prerequisites": ["M10.C2.L1", "M10.C4.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C5.L2",
+                "title": "GitHub Actions : workflows et jobs",
+                "prerequisites": ["M10.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C5.L3",
+                "title": "Pipeline de build et test automatisé",
+                "prerequisites": ["M10.C5.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C5.L4",
+                "title": "Continuous Deployment strategies",
+                "prerequisites": ["M10.C5.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C5.L5",
+                "title": "Blue-green deployment et canary releases",
+                "prerequisites": ["M10.C5.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C5.L6",
+                "title": "Rollback strategies",
+                "prerequisites": ["M10.C5.L5"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M10.C6",
+            "title": "Containerization",
+            "lessons": [
+              {
+                "id": "M10.C6.L1",
+                "title": "Docker : concepts et architecture",
+                "prerequisites": [],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C6.L2",
+                "title": "Dockerfile : best practices",
+                "prerequisites": ["M10.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C6.L3",
+                "title": "Multi-stage builds",
+                "prerequisites": ["M10.C6.L2"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C6.L4",
+                "title": "Docker Compose pour environnements multi-conteneurs",
+                "prerequisites": ["M10.C6.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C6.L5",
+                "title": "Volumes et networking Docker",
+                "prerequisites": ["M10.C6.L4"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C6.L6",
+                "title": "Sécurité des containers",
+                "prerequisites": ["M10.C6.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C7",
+            "title": "Orchestration",
+            "lessons": [
+              {
+                "id": "M10.C7.L1",
+                "title": "Introduction à Kubernetes",
+                "prerequisites": ["M10.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C7.L2",
+                "title": "Pods, Services, Deployments",
+                "prerequisites": ["M10.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C7.L3",
+                "title": "ConfigMaps et Secrets",
+                "prerequisites": ["M10.C7.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C7.L4",
+                "title": "Ingress et load balancing",
+                "prerequisites": ["M10.C7.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C7.L5",
+                "title": "StatefulSets et Persistent Volumes",
+                "prerequisites": ["M10.C7.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C7.L6",
+                "title": "Auto-scaling : HPA et VPA",
+                "prerequisites": ["M10.C7.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C8",
+            "title": "Observabilité",
+            "lessons": [
+              {
+                "id": "M10.C8.L1",
+                "title": "Les trois piliers : logs, metrics, traces",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C8.L2",
+                "title": "Logging : structured logging, Winston",
+                "prerequisites": ["M10.C8.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C8.L3",
+                "title": "Metrics : Prometheus",
+                "prerequisites": ["M10.C8.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C8.L4",
+                "title": "Distributed tracing : OpenTelemetry",
+                "prerequisites": ["M10.C8.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C8.L5",
+                "title": "Dashboards : Grafana",
+                "prerequisites": ["M10.C8.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C8.L6",
+                "title": "Alerting et incident response",
+                "prerequisites": ["M10.C8.L5"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C9",
+            "title": "Infrastructure as Code",
+            "lessons": [
+              {
+                "id": "M10.C9.L1",
+                "title": "Principes IaC",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C9.L2",
+                "title": "Terraform : introduction",
+                "prerequisites": ["M10.C9.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C9.L3",
+                "title": "State management et backends",
+                "prerequisites": ["M10.C9.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M10.C9.L4",
+                "title": "Modules et composition",
+                "prerequisites": ["M10.C9.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M10.C10",
+            "title": "Cloud fundamentals",
+            "lessons": [
+              {
+                "id": "M10.C10.L1",
+                "title": "IaaS vs PaaS vs SaaS",
+                "prerequisites": [],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M10.C10.L2",
+                "title": "AWS : EC2, S3, RDS concepts",
+                "prerequisites": ["M10.C10.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C10.L3",
+                "title": "AWS : VPC, IAM, Security Groups",
+                "prerequisites": ["M10.C10.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C10.L4",
+                "title": "Serverless : Lambda, API Gateway",
+                "prerequisites": ["M10.C10.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M10.C10.L5",
+                "title": "Cost optimization dans le cloud",
+                "prerequisites": ["M10.C10.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M11",
+        "title": "Machine Learning et Data Engineering",
+        "academic_mapping": "MIT 6.036 / Stanford CS229",
+        "estimated_duration_weeks": 10,
+        "chapters": [
+          {
+            "id": "M11.C1",
+            "title": "Fondamentaux ML",
+            "lessons": [
+              {
+                "id": "M11.C1.L1",
+                "title": "Types d'apprentissage : supervisé, non-supervisé, par renforcement",
+                "prerequisites": ["M1.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C1.L2",
+                "title": "Training, validation, test sets",
+                "prerequisites": ["M11.C1.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M11.C1.L3",
+                "title": "Overfitting et underfitting",
+                "prerequisites": ["M11.C1.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C1.L4",
+                "title": "Bias-variance tradeoff",
+                "prerequisites": ["M11.C1.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C1.L5",
+                "title": "Cross-validation",
+                "prerequisites": ["M11.C1.L2"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M11.C2",
+            "title": "Régression",
+            "lessons": [
+              {
+                "id": "M11.C2.L1",
+                "title": "Régression linéaire : moindres carrés",
+                "prerequisites": ["M1.C6.L3", "M11.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C2.L2",
+                "title": "Descente de gradient",
+                "prerequisites": ["M11.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C2.L3",
+                "title": "Régression polynomiale",
+                "prerequisites": ["M11.C2.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C2.L4",
+                "title": "Régularisation : Ridge, Lasso",
+                "prerequisites": ["M11.C2.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M11.C3",
+            "title": "Classification",
+            "lessons": [
+              {
+                "id": "M11.C3.L1",
+                "title": "Régression logistique",
+                "prerequisites": ["M11.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C3.L2",
+                "title": "K-Nearest Neighbors (KNN)",
+                "prerequisites": ["M11.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C3.L3",
+                "title": "Decision trees",
+                "prerequisites": ["M11.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C3.L4",
+                "title": "Random Forests",
+                "prerequisites": ["M11.C3.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C3.L5",
+                "title": "Support Vector Machines (SVM)",
+                "prerequisites": ["M11.C3.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M11.C3.L6",
+                "title": "Naive Bayes",
+                "prerequisites": ["M1.C5.L2", "M11.C1.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M11.C4",
+            "title": "Évaluation de modèles",
+            "lessons": [
+              {
+                "id": "M11.C4.L1",
+                "title": "Métriques : accuracy, precision, recall, F1-score",
+                "prerequisites": ["M11.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C4.L2",
+                "title": "Matrice de confusion",
+                "prerequisites": ["M11.C4.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M11.C4.L3",
+                "title": "Courbe ROC et AUC",
+                "prerequisites": ["M11.C4.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C4.L4",
+                "title": "MSE, RMSE, MAE pour la régression",
+                "prerequisites": ["M11.C2.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M11.C5",
+            "title": "Réseaux de neurones",
+            "lessons": [
+              {
+                "id": "M11.C5.L1",
+                "title": "Perceptron et neurones artificiels",
+                "prerequisites": ["M11.C3.L1", "M1.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C5.L2",
+                "title": "Multi-layer perceptron (MLP)",
+                "prerequisites": ["M11.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C5.L3",
+                "title": "Backpropagation",
+                "prerequisites": ["M11.C5.L2"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M11.C5.L4",
+                "title": "Fonctions d'activation : ReLU, Sigmoid, Tanh",
+                "prerequisites": ["M11.C5.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C5.L5",
+                "title": "Optimizers : SGD, Adam, RMSprop",
+                "prerequisites": ["M11.C5.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C5.L6",
+                "title": "Dropout et régularisation",
+                "prerequisites": ["M11.C5.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M11.C6",
+            "title": "Feature engineering",
+            "lessons": [
+              {
+                "id": "M11.C6.L1",
+                "title": "Preprocessing : normalisation, standardisation",
+                "prerequisites": ["M11.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C6.L2",
+                "title": "Encoding : one-hot, label encoding",
+                "prerequisites": ["M11.C6.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M11.C6.L3",
+                "title": "Feature selection et extraction",
+                "prerequisites": ["M11.C6.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C6.L4",
+                "title": "PCA (Principal Component Analysis)",
+                "prerequisites": ["M1.C6.L5", "M11.C6.L3"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M11.C6.L5",
+                "title": "Handling missing data",
+                "prerequisites": ["M11.C6.L1"],
+                "estimated_study_time_hours": 4
+              }
+            ]
+          },
+          {
+            "id": "M11.C7",
+            "title": "Clustering",
+            "lessons": [
+              {
+                "id": "M11.C7.L1",
+                "title": "K-Means",
+                "prerequisites": ["M11.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C7.L2",
+                "title": "Hierarchical clustering",
+                "prerequisites": ["M11.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C7.L3",
+                "title": "DBSCAN",
+                "prerequisites": ["M11.C7.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M11.C8",
+            "title": "Data Engineering",
+            "lessons": [
+              {
+                "id": "M11.C8.L1",
+                "title": "ETL vs ELT pipelines",
+                "prerequisites": [],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C8.L2",
+                "title": "Data warehousing concepts",
+                "prerequisites": ["M11.C8.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C8.L3",
+                "title": "Apache Spark : introduction",
+                "prerequisites": ["M11.C8.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M11.C8.L4",
+                "title": "Batch vs stream processing",
+                "prerequisites": ["M11.C8.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C8.L5",
+                "title": "Data quality et validation",
+                "prerequisites": ["M11.C8.L1"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M11.C9",
+            "title": "ML en production",
+            "lessons": [
+              {
+                "id": "M11.C9.L1",
+                "title": "Model serving : REST API pour ML",
+                "prerequisites": ["M11.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M11.C9.L2",
+                "title": "Model versioning",
+                "prerequisites": ["M11.C9.L1"],
+                "estimated_study_time_hours": 4
+              },
+              {
+                "id": "M11.C9.L3",
+                "title": "Monitoring de modèles : drift detection",
+                "prerequisites": ["M11.C9.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M11.C9.L4",
+                "title": "A/B testing pour ML",
+                "prerequisites": ["M11.C9.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "M12",
+        "title": "Topics avancés et scalabilité",
+        "academic_mapping": "Cours avancés niveau master",
+        "estimated_duration_weeks": 8,
+        "chapters": [
+          {
+            "id": "M12.C1",
+            "title": "Compilation et optimisation",
+            "lessons": [
+              {
+                "id": "M12.C1.L1",
+                "title": "Phases de compilation : lexing, parsing",
+                "prerequisites": ["M4.C2.L6"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C1.L2",
+                "title": "AST (Abstract Syntax Tree)",
+                "prerequisites": ["M12.C1.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C1.L3",
+                "title": "Optimisations : constant folding, dead code elimination",
+                "prerequisites": ["M12.C1.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C1.L4",
+                "title": "JIT compilation : V8 engine",
+                "prerequisites": ["M12.C1.L3"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M12.C2",
+            "title": "Garbage collection avancé",
+            "lessons": [
+              {
+                "id": "M12.C2.L1",
+                "title": "Algorithmes GC : mark-and-sweep détaillé",
+                "prerequisites": ["M6.C5.L7"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C2.L2",
+                "title": "Generational GC",
+                "prerequisites": ["M12.C2.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C2.L3",
+                "title": "GC dans V8 et Node.js",
+                "prerequisites": ["M12.C2.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C2.L4",
+                "title": "Memory leaks : détection et prévention",
+                "prerequisites": ["M12.C2.L3"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M12.C3",
+            "title": "Performance tuning",
+            "lessons": [
+              {
+                "id": "M12.C3.L1",
+                "title": "Profiling : CPU et mémoire",
+                "prerequisites": ["M6.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C3.L2",
+                "title": "Flame graphs",
+                "prerequisites": ["M12.C3.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C3.L3",
+                "title": "Event loop optimization dans Node.js",
+                "prerequisites": ["M12.C3.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C3.L4",
+                "title": "Benchmarking et load testing",
+                "prerequisites": ["M12.C3.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M12.C4",
+            "title": "Caching strategies",
+            "lessons": [
+              {
+                "id": "M12.C4.L1",
+                "title": "Niveaux de cache : browser, CDN, application, database",
+                "prerequisites": ["M7.C8.L3"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C4.L2",
+                "title": "Redis : structures de données avancées",
+                "prerequisites": ["M8.C7.L3"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C4.L3",
+                "title": "Cache invalidation strategies",
+                "prerequisites": ["M12.C4.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C4.L4",
+                "title": "Write-through vs write-back cache",
+                "prerequisites": ["M12.C4.L3"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          },
+          {
+            "id": "M12.C5",
+            "title": "Architecture pour scalabilité",
+            "lessons": [
+              {
+                "id": "M12.C5.L1",
+                "title": "Scalabilité verticale vs horizontale",
+                "prerequisites": ["M7.C8.L5"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C5.L2",
+                "title": "Stateless vs stateful services",
+                "prerequisites": ["M12.C5.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C5.L3",
+                "title": "Session management à grande échelle",
+                "prerequisites": ["M12.C5.L2"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C5.L4",
+                "title": "Backpressure et flow control",
+                "prerequisites": ["M12.C5.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C5.L5",
+                "title": "Circuit breakers et resilience patterns",
+                "prerequisites": ["M12.C5.L1"],
+                "estimated_study_time_hours": 6
+              }
+            ]
+          },
+          {
+            "id": "M12.C6",
+            "title": "Formal methods (introduction)",
+            "lessons": [
+              {
+                "id": "M12.C6.L1",
+                "title": "Spécification formelle",
+                "prerequisites": ["M1.C1.L3", "M4.C3.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M12.C6.L2",
+                "title": "Model checking basique",
+                "prerequisites": ["M12.C6.L1"],
+                "estimated_study_time_hours": 7
+              },
+              {
+                "id": "M12.C6.L3",
+                "title": "Invariants et preuves de programmes",
+                "prerequisites": ["M12.C6.L1"],
+                "estimated_study_time_hours": 7
+              }
+            ]
+          },
+          {
+            "id": "M12.C7",
+            "title": "Privacy et GDPR",
+            "lessons": [
+              {
+                "id": "M12.C7.L1",
+                "title": "Privacy by design",
+                "prerequisites": ["M9.C1.L1"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C7.L2",
+                "title": "GDPR : principes et implications techniques",
+                "prerequisites": ["M12.C7.L1"],
+                "estimated_study_time_hours": 6
+              },
+              {
+                "id": "M12.C7.L3",
+                "title": "Anonymisation et pseudonymisation",
+                "prerequisites": ["M12.C7.L2"],
+                "estimated_study_time_hours": 5
+              },
+              {
+                "id": "M12.C7.L4",
+                "title": "Data retention et right to be forgotten",
+                "prerequisites": ["M12.C7.L2"],
+                "estimated_study_time_hours": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dependency_graph": {
+      "description": "Les dépendances majeures entre modules",
+      "dependencies": [
+        {
+          "from": "M1",
+          "to": ["M2", "M3", "M4"],
+          "reason": "Les mathématiques sont fondamentales pour les algorithmes et la théorie"
+        },
+        {
+          "from": "M2",
+          "to": ["M3", "M7", "M8"],
+          "reason": "Les structures de données sont nécessaires pour les algorithmes avancés, réseaux et bases de données"
+        },
+        {
+          "from": "M4",
+          "to": ["M12"],
+          "reason": "La théorie de la calculabilité est nécessaire pour la compilation"
+        },
+        {
+          "from": "M5",
+          "to": ["M6"],
+          "reason": "L'architecture est un prérequis pour les systèmes d'exploitation"
+        },
+        {
+          "from": "M6",
+          "to": ["M7", "M12"],
+          "reason": "Les OS sont nécessaires pour comprendre les réseaux et la performance"
+        },
+        {
+          "from": "M7",
+          "to": ["M8"],
+          "reason": "Les concepts de systèmes distribués s'appliquent aux bases de données"
+        },
+        {
+          "from": "M8",
+          "to": ["M10"],
+          "reason": "Les bases de données sont essentielles pour l'ingénierie logicielle"
+        },
+        {
+          "from": "M7",
+          "to": ["M9"],
+          "reason": "Les réseaux sont un prérequis pour la sécurité réseau"
+        },
+        {
+          "from": "M9",
+          "to": ["M10"],
+          "reason": "La sécurité doit être intégrée dans les pratiques DevOps"
+        },
+        {
+          "from": "M1",
+          "to": ["M11"],
+          "reason": "Les mathématiques (algèbre linéaire, probabilités) sont essentielles pour le ML"
+        },
+        {
+          "from": "M2",
+          "to": ["M12"],
+          "reason": "Les structures de données sont nécessaires pour la performance"
+        }
+      ]
+    },
+    "progression_path": {
+      "description": "Suggestion de progression sur 18-36 mois",
+      "full_time_18_months": [
+        {
+          "trimester": 1,
+          "modules": ["M1", "M2"],
+          "focus": "Fondations mathématiques et algorithmiques"
+        },
+        {
+          "trimester": 2,
+          "modules": ["M3", "M4"],
+          "focus": "Techniques avancées et théorie"
+        },
+        {
+          "trimester": 3,
+          "modules": ["M5", "M6"],
+          "focus": "Systèmes bas niveau"
+        },
+        {
+          "trimester": 4,
+          "modules": ["M7", "M8"],
+          "focus": "Réseaux et bases de données"
+        },
+        {
+          "trimester": 5,
+          "modules": ["M9", "M10"],
+          "focus": "Sécurité et ingénierie"
+        },
+        {
+          "trimester": 6,
+          "modules": ["M11", "M12"],
+          "focus": "ML et topics avancés + projets capstone"
+        }
+      ],
+      "part_time_36_months": [
+        {
+          "semester": 1,
+          "modules": ["M1"],
+          "focus": "Mathématiques pour CS"
+        },
+        {
+          "semester": 2,
+          "modules": ["M2"],
+          "focus": "Structures de données et algorithmes"
+        },
+        {
+          "semester": 3,
+          "modules": ["M3"],
+          "focus": "Techniques algorithmiques avancées"
+        },
+        {
+          "semester": 4,
+          "modules": ["M4"],
+          "focus": "Théorie de la complexité"
+        },
+        {
+          "semester": 5,
+          "modules": ["M5", "M6"],
+          "focus": "Architecture et OS"
+        },
+        {
+          "semester": 6,
+          "modules": ["M7"],
+          "focus": "Réseaux et systèmes distribués"
+        },
+        {
+          "semester": 7,
+          "modules": ["M8"],
+          "focus": "Bases de données"
+        },
+        {
+          "semester": 8,
+          "modules": ["M9"],
+          "focus": "Sécurité"
+        },
+        {
+          "semester": 9,
+          "modules": ["M10"],
+          "focus": "Ingénierie logicielle et DevOps"
+        },
+        {
+          "semester": 10,
+          "modules": ["M11"],
+          "focus": "Machine Learning"
+        },
+        {
+          "semester": 11,
+          "modules": ["M12"],
+          "focus": "Topics avancés"
+        },
+        {
+          "semester": 12,
+          "modules": [],
+          "focus": "Capstone final et consolidation"
+        }
+      ]
+    },
+    "capstone_projects": [
+      {
+        "id": "CAPSTONE_1",
+        "title": "Système de gestion de tâches distribué",
+        "timing": "Après M7",
+        "description": "Concevoir et implémenter un système de gestion de tâches avec architecture microservices",
+        "required_skills": ["Réseaux", "Systèmes distribués", "Bases de données", "API design"],
+        "deliverables": [
+          "Architecture système complète",
+          "Implémentation PERN stack",
+          "Documentation technique",
+          "Tests et benchmarks"
+        ]
+      },
+      {
+        "id": "CAPSTONE_2",
+        "title": "Plateforme de CI/CD personnalisée",
+        "timing": "Après M10",
+        "description": "Créer une plateforme CI/CD avec containers et orchestration",
+        "required_skills": ["DevOps", "Containers", "Kubernetes", "Testing", "Security"],
+        "deliverables": [
+          "Pipeline automation",
+          "Monitoring et alerting",
+          "Infrastructure as Code",
+          "Documentation utilisateur"
+        ]
+      },
+      {
+        "id": "CAPSTONE_3",
+        "title": "Application web scalable complète",
+        "timing": "Après M12",
+        "description": "Construire une application PERN à grande échelle avec toutes les best practices",
+        "required_skills": ["Tous les modules"],
+        "scope": [
+          "Architecture pour 1M+ utilisateurs",
+          "Microservices avec message queues",
+          "Sharding et réplication de base de données",
+          "CDN et caching multi-niveaux",
+          "Authentification OAuth complète",
+          "Monitoring et observabilité (logs, metrics, traces)",
+          "CI/CD avec déploiement automatisé",
+          "Tests (unit, integration, e2e, load)",
+          "Sécurité (OWASP Top 10 addressed)",
+          "ML pour recommandations (optionnel)"
+        ],
+        "deliverables": [
+          "Code source complet (GitHub)",
+          "Documentation architecture (diagrammes, ADRs)",
+          "Guide de déploiement",
+          "Rapport de performance et scalabilité",
+          "Présentation technique"
+        ]
+      }
+    ]
+  }
+}
